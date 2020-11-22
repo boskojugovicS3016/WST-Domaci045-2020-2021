@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(".nav").slideToggle(400);
+            })
+            $(window).resize(function () {
+                if($(".hamburger").css("display") == "none")
+                {
+                    $(".nav").css("display","block");
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html"><img src="images/logo.jpg" alt="logo"></a>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Pocetna</a></li>
+                <li><a href="#">Vesti</a></li>
+                <li><a href="#">Proizvodi</a></li>
+                <li><a href="o_nama.html">O nama</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div class="glavniSadrzaj">
+            <div class="centralniDeo">
+                
+                <div class="proizvodi">
+                    <h1>Hrana za svinje</h1>    
+                    <img src="images/jej.jpg" alt="">
+                    <hr>
+                    <h4>Cena: 4.500,00 din</h4>
+                    <h4>Kolicina: <br><input type="text"></h4>
+                    <input type="submit" value="Dodaj u korpu">
+                </div>
+                <div class="proizvodi">
+                    <h1>Hrana za kokoske</h1>    
+                    <img src="images/joj.jpg" alt="">
+                    <hr>
+                    <h4>Cena: 4.500,00 din</h4>
+                    <h4>Kolicina: <br><input type="text"></h4>
+                    <input type="submit" value="Dodaj u korpu">
+                </div>
+                <div class="proizvodi">
+                    <h1>Hrana za konje</h1>    
+                    <!-- <img src="images/konji.png" alt=""> -->
+                    <img src="images/konj.png" alt="">
+                    <hr>
+                    <h4>Cena: 5.500,00 din</h4>
+                    <h4>Kolicina: <br><input type="text"></h4>
+                    <input type="submit" value="Dodaj u korpu">
+                </div>
+                <div class="proizvodi">
+                    <h1>Hrana za ovce</h1>    
+                    <img src="images/ovca.jpg" alt="">
+                    <hr>
+                    <h4>Cena: 3.500,00 din</h4>
+                    <h4>Kolicina: <br><input type="text"></h4>
+                    <input type="submit" value="Dodaj u korpu">
+                </div>
+            </div>
+
+            <div class="leviSidebar">
+                <h4>Ime: <br><input type="text"></h4>
+                <h4>Username: <br><input type="text" name="username"></h4>
+                <h4>Email: <br><input type="email" name="email"></h4>
+                <h4>Lozinka: <br><input type="password" name="password"></h4>
+                <h4>Datum rodjenja: <br><input type="date" name="date"></h4>
+                <h4>Pol: <br><select name="pol">
+                        <option value="m">Muski</option>
+                        <option value="z" selected>Zenski</option>
+                        <option value="?!">??!?!?</option>
+                        </select></h4>
+                <h4>Telefon: <br><input type="tel" name="tel"></h4> 
+                <h4><input type="submit" value="Posalji"></h4>
+            
+
+            </div>       
+             
+            
+            <div class="desniSidebar">
+                <div class="vest">
+                    <h3>Psi su najstariji covekovi saputnici, pokazuje DNK</h3>
+                    <h4>by Paul Rincon</h4>
+                    <img src="images/1.jpg">                  
+                    <hr>
+                </div>
+                <div class="vest">
+                    <h3>Borbeni pevac ubio policajca</h3>
+                    <h4>by Herald Of Agony</h4>
+                    <img src="images/2.jpg">
+                    <hr>
+                </div>
+                <div class="vest">
+                    <h3>Kit uginuo nakon plivanja u reci</h3>
+                    <h4>by Steven McKenzie</h4>
+                    <img src="images/3.jpg">
+                    <hr>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer">
+            <h5>Bosko Jugovic S30/16</h5>
+            <h5>bjugovic16@raf.rs</h5>
+            <h5>Klare Cetkin 1e</h5>
+            <h5>064/433-6646</h5>
+
+        </div>
+    </div>
+    
+</body>
+</html>
